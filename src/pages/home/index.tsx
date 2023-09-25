@@ -73,7 +73,7 @@ export function Home(){
     <main className={styles.container}>
       <form className={styles.form} onSubmit={handleSearch}>
         <input
-          placeholder="Digite o símbolo da moeda: BTC..."
+          placeholder="Digite o simbolo da moeda: BTC..."
           value={inputValue}
           onChange={ (e) => setInputValue(e.target.value) }
         />
