@@ -76,7 +76,7 @@ export function Detail() {
         <h4 className={styles.center}>{error}</h4>
         <div className={styles.linkdiv}>
           <Link className={styles.link} to={"/"}>
-            Voltar
+            Voltar para Home
           </Link>
         </div>
       </div>
