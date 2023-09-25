@@ -2,6 +2,10 @@
 .container {
   padding: 0 14px;
   color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .center{
@@ -32,7 +36,7 @@
   margin-top: 16px;
 }
 
-.content .link{
+.content .link, .linkdiv .link{
   color:#0f0f0f;
   font-weight: bold;
   background-color: #FFF;
@@ -40,10 +44,12 @@
   padding: 8px 16px;
   border-radius: 8px;
   transition: 0.5s;
+  cursor: pointer;
 }
-.content .link:hover{
+.content .link:hover, .linkdiv .link:hover{
   background-color: #12f98a;
 }
+
 
 .profit{
   color: #12f98a;
