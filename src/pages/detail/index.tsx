@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './detail.module.css'
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 //https://coinlib.io/api/v1/coin?key=b4cd8f8fb3de94c6&symbol=BTC
 
@@ -86,9 +86,14 @@ export function Detail() {
           {detail?.delta_24h}
         </span>
       </p>
-      <p><strong>Valor mercado:</strong> {detail?.formatedMarket}</p>
-
+      <p><strong>Valor mercado:</strong> {detail?.formatedMarket}</p><br />
+      <div className={styles.linkdiv}>
+        <Link className={styles.link} to={"/"}>
+          <span>Voltar</span>
+        </Link>
+      </div>
     </section>
+    
   </div>
   )
 }

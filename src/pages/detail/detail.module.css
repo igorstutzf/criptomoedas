@@ -27,6 +27,24 @@
   margin-bottom: 16px;
 }
 
+.content .linkdiv{
+  text-align: center;
+  margin-top: 16px;
+}
+
+.content .link{
+  color:#0f0f0f;
+  font-weight: bold;
+  background-color: #FFF;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.content .link:hover{
+  background-color: #12f98a;
+}
+
 .profit{
   color: #12f98a;
 }
