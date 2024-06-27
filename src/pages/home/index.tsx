@@ -29,7 +29,8 @@ export function Home(){
 
   useEffect(() => {
     function getData(){
-      fetch('https://sujeitoprogramador.com/api-cripto/?key=1bee22926e96c248')
+      //fetch('https://sujeitoprogramador.com/api-cripto/?key=1bee22926e96c248')
+      fetch('https://coinlib.io/api/v1/coinlist?key=1bee22926e96c248')
       .then(response => response.json())
       .then((data: DataProps) => {
         let coinsData = data.coins.slice(0, 15); 
